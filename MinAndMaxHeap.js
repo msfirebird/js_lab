@@ -8,6 +8,10 @@
     constructor(){
         this.values = [];
     } 
+   
+    length() {
+        return this.values.length;
+    }
 
     insert(element){
         this.values.push(element);
@@ -87,6 +91,10 @@ class MinHeap {
     constructor(){
         this.values = [];
     } 
+    
+    length() {
+        return this.values.length;
+    }
 
     insert(element){
         this.values.push(element);
