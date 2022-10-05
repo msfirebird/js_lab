@@ -1,15 +1,14 @@
- /*
+/*
   
   BELOW ARE OUR MIN & MAX HEAP CLASSES
   
-  */
+*/
   
-  class MaxHeap {
+class MaxHeap {
     constructor(){
         this.values = [];
     } 
-   
-    length() {
+    size() {
         return this.values.length;
     }
 
@@ -35,6 +34,10 @@
 
             index = parentIndex;
         }
+    }
+
+    peek() {
+        return this.values[0];
     }
 
     remove(){
@@ -91,8 +94,8 @@ class MinHeap {
     constructor(){
         this.values = [];
     } 
-    
-    length() {
+
+    size() {
         return this.values.length;
     }
 
@@ -118,6 +121,10 @@ class MinHeap {
 
             index = parentIndex;
         }
+    }
+
+    peek() {
+        return this.values[0];
     }
 
     remove(){
@@ -169,4 +176,3 @@ class MinHeap {
         }
     }
 }
-  
