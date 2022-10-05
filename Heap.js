@@ -8,7 +8,7 @@ class Heap {
         return this.heap.length;
     }
     
-    push(num) {
+    insert(num) {
         this.heap.push(num);
         let index = this.size() - 1;
         if (index === 0) return;
