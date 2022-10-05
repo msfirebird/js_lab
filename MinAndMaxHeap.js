@@ -40,7 +40,7 @@ class MaxHeap {
         return this.values[0];
     }
 
-    remove(){
+    pop(){
         let max = this.values[0];
         let end = this.values.pop();
 
@@ -127,7 +127,7 @@ class MinHeap {
         return this.values[0];
     }
 
-    remove(){
+    pop(){
         let min = this.values[0];
         let end = this.values.pop();
 
